@@ -1,0 +1,143 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{mathptmx}
+\usepackage{setspace}
+\usepackage{fontawesome5}
+
+% ---------- PAGE SETUP ----------
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\addtolength{\oddsidemargin}{-0.45in}
+\addtolength{\evensidemargin}{-0.45in}
+\addtolength{\textwidth}{0.95in}
+\addtolength{\topmargin}{-0.65in}
+\addtolength{\textheight}{1.3in}
+
+\setstretch{1.0}
+\urlstyle{same}
+
+% ---------- SECTION HEADINGS ----------
+\titleformat{\section}{
+  \vspace{1pt}\bfseries\large\uppercase
+}{}{0em}{}[\vspace{1pt}\titlerule\vspace{1pt}]
+\titlespacing{\section}{0pt}{4pt}{2pt}
+
+% ---------- LIST FORMATTING ----------
+\renewcommand\labelitemi{\textbullet}
+\setlist[itemize]{leftmargin=*, itemsep=0.5pt, topsep=0.8pt}
+\renewcommand\labelitemii{\raisebox{0.2ex}{\scriptsize$\bullet$}}
+\setlist[itemize,2]{leftmargin=1.5em, itemsep=0.3pt, topsep=0.3pt}
+
+% ---------- HIGHLIGHT MACRO ----------
+\newcommand{\Hlight}[1]{\textbf{#1}}
+\newcommand{\sep}{\hspace{0.2cm}\textbar\hspace{0.2cm}}
+
+\begin{document}
+
+% ---------- HEADER ----------
+\begin{center}
+    {\fontsize{18}{20}\selectfont \bfseries Utkarsh Kumar} \\[4pt]
+    \faPhone\ ~+91 7061771437 \quad
+    \faEnvelope\ \href{mailto:work.utkarshjha@gmail.com}{work.utkarshjha@gmail.com} \quad
+    \faGithub\ \href{https://github.com/Utkarshjha09}{Utkarshjha09} \quad
+    \faLinkedin\ \href{https://www.linkedin.com/in/utkarshjha-/}{LinkedIn} \quad
+    \faGlobe\ \href{https://utkarshjh.me}{utkarshjh.me}
+\end{center}
+
+% ----------- EDUCATION -----------
+\section{Education}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l r}
+\textbf{VIT Bhopal University, Sehore, MP \sep B.Tech} & \textbf{CGPA: \Hlight{8.57/10}} \\
+B.Tech in Electronics and Communication Engineering & 2023--2027 \\
+\\[-6pt]
+\textbf{J.P. Central School, Samastipur \sep 12$^{th}$ Standard} & \textbf{Percentage: \Hlight{69.4\%}} \\
+ & 2021--2022 \\
+\\[-6pt]
+\textbf{S.R.D.A.V. Public School, Pupri \sep 10$^{th}$ Standard} & \textbf{Percentage: \Hlight{84\%}} \\
+ & 2019--2020 \\
+\end{tabular*}
+
+% ----------- TECHNICAL SKILLS -----------
+\section{Technical Skills}
+\begin{itemize}
+  \item \textbf{Languages:} \Hlight{Java} (Proficient), \Hlight{Python}, \Hlight{JavaScript (ES6+)}, \Hlight{SQL}
+  \item \textbf{Frontend:} HTML5, CSS3, JSX, Flexbox, Grid, Responsive Design, \Hlight{React.js}, Tailwind CSS, Bootstrap, Material UI, Redux, Redux Toolkit
+  \item \textbf{Backend \& APIs:} \Hlight{Node.js}, \Hlight{Express.js}, RESTful API Development, MVC Architecture, Middleware, Authentication \& Authorization
+  \item \textbf{Databases:} \Hlight{MongoDB} (CRUD, Aggregation, Indexing), SQL Databases
+  \item \textbf{AI / GenAI:} LLMs, Prompt Engineering, OpenAI \& Gemini APIs, \Hlight{RAG Pipelines}, LangChain, LangGraph
+  \item \textbf{DevOps \& Deployment:} \Hlight{Git}, GitHub, \Hlight{Docker}, CI/CD Basics, Render, \Hlight{Vercel}, \Hlight{Firebase}, AWS (Basics)
+  \item \textbf{Tools:} Postman, Axios, Fetch API, Socket.io, WebRTC, Cloudinary, MapBox APIs
+  \item \textbf{Core Concepts:} OOP, DBMS, OS, Computer Networks
+\end{itemize}
+
+% ----------- PROJECTS -----------
+\section{Projects}
+\begin{itemize}[leftmargin=*]
+
+\item \textbf{Invisible Watermarking Tool — Image Security App} \hfill 
+\href{https://github.com/Utkarshjha09/Invisible-Watermarking}{\faGithub} \\
+\textit{React.js, Flask, Python, OpenCV, DCT}
+\begin{itemize}
+  \item Built a web-based application for embedding and extracting invisible image watermarks using DCT-based frequency-domain techniques.
+  \item Implemented configurable watermark strength and robust extraction mechanisms.
+\end{itemize}
+
+\item \textbf{SHADOW — Bilingual AI Voice Assistant} \hfill 
+\href{https://github.com/Utkarshjha09/SHADOW-AI}{\faGithub} \\
+\textit{Python, Flask, SpeechRecognition, Google TTS, Ollama}
+\begin{itemize}
+  \item Developed a bilingual AI voice assistant with wake-word detection and conversational AI capabilities.
+  \item Built a web interface supporting real-time speech recognition and Hindi text-to-speech.
+\end{itemize}
+
+\item \textbf{FaceRecognitionSystem — Smart Door Security} \hfill 
+\href{https://github.com/Utkarshjha09/FaceRecognitionSystem}{\faGithub} \\
+\textit{Python, Raspberry Pi, OpenCV, Telegram Bot}
+\begin{itemize}
+  \item Developed an IR sensor–triggered face recognition system with real-time alerts via Telegram.
+  \item Integrated buzzer alerts for unknown individuals using Raspberry Pi GPIO.
+\end{itemize}
+
+\item \textbf{MediTrack — Pharmaceutical Inventory Management System} \hfill 
+\href{https://github.com/Utkarshjha09/MediTrack}{\faGithub} \\
+\textit{React, Spring Boot, Java, MySQL, JDBC}
+\begin{itemize}
+  \item Built a full-stack system for pharmaceutical inventory management, batch tracking, and expiry monitoring.
+  \item Implemented REST APIs, automated schedulers, and OTP-based authentication.
+\end{itemize}
+
+\end{itemize}
+
+% ----------- CERTIFICATIONS -----------
+\section{Certifications \& Achievements}
+\begin{itemize}
+  \item Build Multimodal Generative AI Applications — IBM
+  \item Agentic AI with LangChain and LangGraph — IBM
+  \item MERN Stack — Apna College
+  \item Google IT Support Professional Certificate — Google
+  \item Full Stack Generative \& Agentic AI with Python — Udemy
+  \item Agentic AI with LangGraph, CrewAI, AutoGen, and BeeAI — IBM
+  \item Introduction to Internet of Things — NPTEL
+\end{itemize}
+
+% ----------- EXTRA-CURRICULAR -----------
+\section{Extra-Curricular Activities}
+\begin{itemize}
+  \item \textbf{National Service Scheme (NSS) Volunteer:} Participated in blood donation camps, mega tree plantation drives, and social awareness programs.
+  \item \textbf{Event Coordination — University Convocation:} Member of the organizing team for a convocation ceremony attended by the Chief Minister of Madhya Pradesh.
+  \item \textbf{Technical Team Member — Notion Community Club:} Contributed to building and managing Notion workspaces and technical documentation.
+\end{itemize}
+
+% ----------- ADDITIONAL INFO -----------
+\section{Additional Information}
+\begin{itemize}
+  \item \textbf{Languages:} Hindi (Native), Maithili (Native), English (Fluent)
+\end{itemize}
+
+\end{document}
